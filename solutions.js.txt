@@ -1,0 +1,58 @@
+// 1. Write a loop to print numbers from 1 to 10.
+console.log("--- Problem 1 ---");
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+}
+
+// 2. Write a function that takes an array of numbers and returns the sum.
+console.log("\n--- Problem 2 ---");
+function sumArray(arr) {
+    return arr.reduce((sum, num) => sum + num, 0);
+}
+console.log(sumArray([1, 2, 3, 4, 5])); // Output: 15
+
+// 3. Write a function to find the largest number in an array.
+console.log("\n--- Problem 3 ---");
+function findLargest(arr) {
+    return Math.max(...arr);
+}
+console.log(findLargest([10, 5, 20, 8])); // Output: 20
+
+// 4. Write a function that checks if a number is even or odd.
+console.log("\n--- Problem 4 ---");
+function checkEvenOdd(num) {
+    return num % 2 === 0 ? "Even" : "Odd";
+}
+console.log(checkEvenOdd(7)); // Output: Odd
+console.log(checkEvenOdd(4)); // Output: Even
+
+// 5. Write a function that reverses a given string.
+console.log("\n--- Problem 5 ---");
+function reverseString(str) {
+    return str.split("").reverse().join("");
+}
+console.log(reverseString("hello")); // Output: olleh
+
+// 6. Merge two arrays using the spread operator
+console.log("\n--- Problem 6 ---");
+const a =;
+const b =;
+const merged = [...a, ...b];
+console.log(merged); // Output: [1, 2, 3, 4]
+
+// 7. Use ES6 filter to return even numbers from an array
+console.log("\n--- Problem 7 ---");
+const numbers =;
+const evenNumbers = numbers.filter(num => num % 2 === 0);
+console.log(evenNumbers); // Output: [2, 4, 6]
+
+// 8. Rewrite the below using template literals
+console.log("\n--- Problem 8 ---");
+const name = "Alice";
+const msg = `Hello ${name}, welcome!`;
+console.log(msg); // Output: Hello Alice, welcome!
+
+// 9. Rewrite this function using an arrow function
+console.log("\n--- Problem 9 ---");
+const greet = (name) => `Hello, ${name}`;
+console.log(greet("Bob")); // Output: Hello, Bob
